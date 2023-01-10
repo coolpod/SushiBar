@@ -10,7 +10,7 @@
             <div class="left-row d-inline-block">
               <div class="seat" 
                    *ngFor="let in of counter(mathCeil(totalSeats/2)) ;let i = index"
-                   [ngStyle]="this.sushiTable[i] == 0 ? {'background-color': '#BDBDBD'} : {'background-color': '#FE2E2E'}">
+                   [ngStyle]="this.sushiTable[i] == 0 ? {'background-color': '#19E219'} : {'background-color': '#FE2E2E'}">
                 {{i + 1}} 
                 <br>
                 <span class="customer-id">{{sushiTable[i]}}</span>
@@ -19,7 +19,7 @@
             <div class="right-row d-inline-block">
               <div class="seat" 
                    *ngFor="let in of counter(mathFloor(totalSeats/2)) ;let i = index" 
-                   [ngStyle]="this.sushiTable[totalSeats-1-i] == 0 ? {'background-color': '#BDBDBD'} : {'background-color': '#FE2E2E'}">
+                   [ngStyle]="this.sushiTable[totalSeats-1-i] == 0 ? {'background-color': '#19E219'} : {'background-color': '#FE2E2E'}">
                 {{totalSeats - i}} 
                 <br>
                 <span class="customer-id">{{sushiTable[ totalSeats - 1 - i]}}</span>
