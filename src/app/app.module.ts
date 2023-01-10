@@ -13,6 +13,8 @@ import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 import { RemoveCustomerDialogComponent } from './remove-customer-dialog/remove-customer-dialog.component';
 import { NewCustomerDialogComponent } from './new-customer-dialog/new-customer-dialog.component';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { NewCustomerDialogComponent } from './new-customer-dialog/new-customer-d
     FormsModule,
     MatButtonModule,
     MatInputModule,
-    MatTableModule
+    MatTableModule,
+    MatSnackBarModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
