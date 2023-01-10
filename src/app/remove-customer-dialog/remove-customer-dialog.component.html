@@ -1,0 +1,14 @@
+<h1 mat-dialog-title>Gast entfernen</h1>
+<div mat-dialog-content>
+  <p>Sind Sie sich sicher dass Sie den Gast/die Gäste mit der Nummer <span class="customer-num">{{data.id}}</span> entfernen wollen?</p>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="cancel()">
+    Nein, nicht entfernen
+  </button>
+  <button mat-button 
+          color="warn"
+          [mat-dialog-close]="data">
+    Ja, entfernen
+  </button>
+</div>

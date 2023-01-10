@@ -1,0 +1,16 @@
+<h1 mat-dialog-title>Hallo Sushi-Meister!</h1>
+<div mat-dialog-content>
+  <p>Bitte gib die Anzahl der Sitzplätze an (max. 100):</p>
+  <mat-form-field appearance="fill">
+    <mat-label>Anzahl der Sitzplätze</mat-label>
+    <input matInput type="number" [(ngModel)]="totalSeats">
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button 
+          color="primary"
+          [mat-dialog-close]="totalSeats"
+          [disabled]="(totalSeats < 1) || (totalSeats > 100)">
+    Starten
+  </button>
+</div>
