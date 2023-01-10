@@ -8,8 +8,8 @@ import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dial
   styleUrls: ['./table-init-dialog.component.scss']
 })
 export class TableInitDialogComponent {
-  totalSeats = 0;
-  
+  totalSeats = 1;
+
   constructor(public dialogRef: MatDialogRef<TableInitDialogComponent>) {
   }
 }

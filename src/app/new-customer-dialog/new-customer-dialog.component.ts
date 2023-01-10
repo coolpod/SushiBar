@@ -7,7 +7,7 @@ import { MatDialog, MAT_DIALOG_DATA, MatDialogRef } from '@angular/material/dial
   styleUrls: ['./new-customer-dialog.component.scss']
 })
 export class NewCustomerDialogComponent {
-  groupSize = 0;
+  groupSize = 1;
 
   constructor(public dialogRef: MatDialogRef<NewCustomerDialogComponent>,
               @Inject(MAT_DIALOG_DATA) public data: {totalSeats: number}) {
